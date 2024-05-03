@@ -1,0 +1,14 @@
+.container {
+	margin: 0 auto;
+
+	.top_content {
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	.board_content {
+		gap: 20px;
+		display: flex;
+		justify-content: center;
+	}
+}

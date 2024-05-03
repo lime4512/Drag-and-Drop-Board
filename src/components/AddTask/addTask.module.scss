@@ -1,0 +1,24 @@
+.content {
+	display: inline-block;
+	.add_input {
+		display: block;
+		font-size: 20px;
+		width: 500px;
+		padding: 5px 10px;
+
+		outline: none;
+	}
+	.container_btn {
+		margin-top: 10px;
+		display: flex;
+		justify-content: end;
+		.add_btn {
+			display: flex;
+			align-items: center;
+
+			background-color: rgb(119, 46, 187);
+			padding: 7px 10px;
+			border-radius: 5px;
+		}
+	}
+}
