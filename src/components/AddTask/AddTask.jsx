@@ -24,6 +24,13 @@ export const AddTask = ({ tasks, setTasks }) => {
 			const list = [...prev, task]
 
 			localStorage.setItem('Tasks', JSON.stringify(list))
+
+			setTask({
+				id: '',
+				name: '',
+				status: 'todo',
+			})
+			toast.success('Заметка добавлена')
 			return list
 		})
 	}
