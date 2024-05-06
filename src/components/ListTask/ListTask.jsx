@@ -17,11 +17,20 @@ export const ListTask = ({ tasks, setTasks }) => {
 		setCompleted(fCompleted)
 	}, [tasks])
 
+	const statuses = ['todo', 'progress', 'completed']
 	return (
 		<div className={styles.container}>
-			<TaskBlock list={todos} />
-			<TaskBlock list={progress} />
-			<TaskBlock list={completed} />
+			{statuses.map(status => (
+				<TaskBlock
+					key={Math.random()}
+					status={status}
+					todos={todos}
+					progress={progress}
+					completed={completed}
+					tasks={tasks}
+					setTasks={setTasks}
+				/>
+			))}
 		</div>
 	)
 }
