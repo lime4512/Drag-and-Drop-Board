@@ -14,7 +14,7 @@ function App() {
 		<DndProvider backend={HTML5Backend}>
 			<div className='container'>
 				<div className='top_content'>
-					<h1>Доска задач</h1>
+					<h1 className='title_content'>Доска задач</h1>
 					<AddTask tasks={tasks} setTasks={setTasks} />
 				</div>
 				<div className='board_content'>

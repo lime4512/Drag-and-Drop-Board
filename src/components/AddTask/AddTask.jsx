@@ -19,7 +19,9 @@ export const AddTask = ({ tasks, setTasks }) => {
 		if (task.name.length <= 3) {
 			return toast.error('Более 3 символов')
 		}
-
+		if (task.name.length >= 50) {
+			return toast.error('Менее 50 символов')
+		}
 		setTasks(prev => {
 			const list = [...prev, task]
 
